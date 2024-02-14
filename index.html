@@ -30,16 +30,66 @@
 
             <!-- Game Screen -->
             <section>
-                <div class="flex flex-col justify-center items-center min-h-screen">
+                <div class="flex flex-col justify-center items-center min-h-screen gap-16 pt-16">
                     <!-- display -->
-                    <div class=" artboard artboard-horizontal phone-6 border-[20px] border-[#010313CC] rounded-xl bg-[#FFFFFFB3] flex justify-center items-center">
-                        <span class="font-poppins-semibold text-9xl text-[#010313]">Y</span>
+                    <div class=" artboard artboard-horizontal phone-6 border-[20px] border-[#010313CC] rounded-xl bg-[#FFFFFFB3] ">
+                       <div class="flex justify-center">
+                        <p class=" text-white bg-[#010313CC] rounded-b-xl pb-4 px-6">Don't watch keyboard while playing...</p>
+                       </div>
+                        <div class="flex justify-center items-center h-full">
+                            <span class="font-poppins-semibold text-9xl text-[#010313]">Y</span>
+                        </div>
                     </div>
 
                     <!-- Keyboard start here-->
-
+                    <div>
+                        <div class="flex justify-center gap-1 my-1 w-full">
+                            <kbd class="kbd">q</kbd>
+                            <kbd class="kbd">w</kbd>
+                            <kbd class="kbd">e</kbd>
+                            <kbd class="kbd">r</kbd>
+                            <kbd class="kbd">t</kbd>
+                            <kbd class="kbd">y</kbd>
+                            <kbd class="kbd">u</kbd>
+                            <kbd class="kbd">i</kbd>
+                            <kbd class="kbd">o</kbd>
+                            <kbd class="kbd">p</kbd>
+                          </div> 
+                          <div class="flex justify-center gap-1 my-1 w-full">
+                            <kbd class="kbd">a</kbd>
+                            <kbd class="kbd">s</kbd>
+                            <kbd class="kbd">d</kbd>
+                            <kbd class="kbd">f</kbd>
+                            <kbd class="kbd">g</kbd>
+                            <kbd class="kbd">h</kbd>
+                            <kbd class="kbd">j</kbd>
+                            <kbd class="kbd">k</kbd>
+                            <kbd class="kbd">l</kbd>
+                          </div> 
+                          <div class="flex justify-center gap-1 my-1 w-full">
+                            <kbd class="kbd">z</kbd>
+                            <kbd class="kbd">x</kbd>
+                            <kbd class="kbd">c</kbd>
+                            <kbd class="kbd">v</kbd>
+                            <kbd class="kbd">b</kbd>
+                            <kbd class="kbd">n</kbd>
+                            <kbd class="kbd">m</kbd>
+                            <kbd class="kbd">/</kbd>
+                          </div>
+                    </div>
                     <!-- Keyboard ends here-->
+
                     <!-- life and score -->
+                    <div class="flex justify-between w-3/4">
+                        <button class="btn rounded-full bg-[#894189] hover:bg-[#894189] text-white border-none px-7">
+                            Life
+                            <img src="images/heart.svg" alt=""> 1
+                          </button>
+                          <button class="btn rounded-full bg-[#360490] hover:bg-[#360490] text-white border-none px-7">
+                            Score
+                            <img src="images/dollar.svg" alt=""> 1
+                          </button>
+                    </div>
                 </div>
             </section>
 
