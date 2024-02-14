@@ -19,17 +19,18 @@
         <div class="min-h-screen bg-no-repeat bg-center bg-[#010313] bg-[url(./images/background.png)] ">
            
             <!-- Home Screen -->
-            <section class="hidden flex justify-center items-center min-h-screen
-            ">
-               <div class="text-white text-center space-y-10">
-                <h1 class="font-anton text-9xl">ALPHA CLASH PRO</h1>
-                <p class="text-2xl">Unleash Your Keyboard Kun g Fu : Press “Enter” to Play</p>
-                <button class="btn">Play Now</button>
+            <section class="">
+               <div class="flex justify-center items-center min-h-screen">
+                <div class="text-white text-center space-y-10">
+                    <h1 class="font-anton text-9xl">ALPHA CLASH PRO</h1>
+                    <p class="text-2xl">Unleash Your Keyboard Kun g Fu : Press “Enter” to Play</p>
+                    <button class="btn">Play Now</button>
+                   </div>
                </div>
             </section>
 
             <!-- Game Screen -->
-            <section>
+            <section class="hidden">
                 <div class="flex flex-col justify-center items-center min-h-screen gap-16 pt-16">
                     <!-- display -->
                     <div class=" artboard artboard-horizontal phone-6 border-[20px] border-[#010313CC] rounded-xl bg-[#FFFFFFB3] ">
@@ -94,7 +95,15 @@
             </section>
 
             <!-- Score Screen -->
-            <section></section>
+            <section class="hidden">
+                <div class="flex justify-center items-center min-h-screen">
+                    <div class=" text-white space-y-4 py-11 px-12 bg-[#FFFFFF33] text-center rounded-xl">
+                        <h2 class="text-6xl font-poppins-extrabold">Score : <span>14</span></h2>
+                        <button class="btn">Play Now</button>
+                        <p class="">Practice will make you Pro</p>
+                    </div>
+                </div>
+            </section>
             
         </div>
     </main>
