@@ -1,5 +1,5 @@
 
-const keyboard =document.addEventListener('keyup', function(event){
+const keyboard = document.addEventListener('keyup', function(event){
     const keyValue = event.key;
 
     const currentAlphabet = document.getElementById('current-alphabet')
@@ -35,6 +35,16 @@ const keyboard =document.addEventListener('keyup', function(event){
         let updatedScore = scoreId - 1;
        getScore('life', updatedScore);
     }
+
+    if(keyValue == 'Escape'){
+        hiddenElementId('game-screen')
+        showElementId('score-screen');
+        
+      const gameScore = getScoreTextToNumber('live-score')
+      const scoreText = document.getElementById('score');
+        scoreText.innerText = gameScore;
+        removeBackgroundColor(currentAlphabetLower);
+    };
 
 })
 
