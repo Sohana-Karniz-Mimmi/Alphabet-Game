@@ -29,5 +29,23 @@ function setBackgroundColor(background){
     backgroundColor.classList.add('bg-orange-400');
 }
 
+// remove key background color
+function removeBackgroundColor(background){
+    const backgroundColor = document.getElementById(background);
+    backgroundColor.classList.remove('bg-orange-400');
+}
 
+// get score
+
+function getScoreTextToNumber(elementId){
+    const scoreTextId = document.getElementById(elementId);
+    const scoreText =  scoreTextId.innerText
+    const scoreTextNumber = parseInt(scoreText);
+    return scoreTextNumber;
+}
+
+function getScore(elementId, value){
+    const score = document.getElementById(elementId)
+    score.innerText = value; 
+}
   
